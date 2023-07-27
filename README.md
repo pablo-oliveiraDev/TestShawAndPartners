@@ -1,14 +1,14 @@
-# TestShawAndPartners
+# 🖥 TestShawAndPartners
 
 
-## RESTFUL api
+## 🌍 RESTFUL api
 
 ```
 API created on demand for testing by Shaw And Partiners with the purpose of testing the candidate's knowledge and specific requests directed by the company
 ```
 
 
-# Installation
+# ⚡ Installation
 
 * Clone the repo by using ```git clone``` with .
 
@@ -17,7 +17,7 @@ API created on demand for testing by Shaw And Partiners with the purpose of test
 * Run ```npm install``` for install all dependences of project.
 
 
-# Start project
+# 🚀 Start project
 
 * ```node app.js``` and ```typescript``` for simple setups.
 
@@ -25,11 +25,11 @@ API created on demand for testing by Shaw And Partiners with the purpose of test
 
 * Case your database not exists use cmd ``` npx prisma generated```
  
-# Database
+# 📂 Database
 
  Database was created in [MongoDb](https://www.mongodb.com/docs/atlas/api/data-api/) with ORM  [prisma js](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/mongodb-typescript-mongodb#prerequisites)
 
-# API Endpoints
+# 🍕 API Endpoints
 
 
 ## Get all users
