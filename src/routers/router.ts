@@ -23,6 +23,6 @@ router.post('/files', upload.single('file'), createUser.handle);
 router.get('/users', findAllUsers.handle);
 router.get('/users/:id', findUserById.handle);
 router.get('/userByCol/col', findUserBYColumn.handle);
-router.get('/users/:id', deleteUser.handle);
+router.delete('/users/:id', deleteUser.handle);
 router.patch('/users/:id',updateUser.handle);
 export { router };
