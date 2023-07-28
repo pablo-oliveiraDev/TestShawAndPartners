@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -25,10 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install Dependencies
-      run: npm install    
-    - name: Set up MongoDB
-      run: npm install mongodb
+      run: npm install
     - name: Generate Prisma Code
       run: npx prisma generate
+    - name: Set up MongoDB
+      run: npm install mongodb
     - name: Run Tests
       run: npm test
