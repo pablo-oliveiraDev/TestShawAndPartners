@@ -28,7 +28,7 @@ function mockReadCSV(data: string): Readable {
 describe('CreateUserController', () => {
     it('deve criar usuários corretamente a partir de um arquivo CSV', async () => {
         // Configuração do mock para o arquivo CSV
-        const csvData = '\nAlice,São Paulo,Brasil,Futebol,timestamp_usuarios.csv\nBob,Rio de Janeiro,Brasil,Basquete,timestamp_usuarios.csv';
+        const csvData = 'name,city,country,favorite_sport,fileName\nAlice,São Paulo,Brasil,Futebol,timestamp_usuarios.csv\nBob,Rio de Janeiro,Brasil,Basquete,timestamp_usuarios.csv';
         const csvFile = mockReadCSV(csvData);
 
         // Configuração do objeto Request com a propriedade file simulada
