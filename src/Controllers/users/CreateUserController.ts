@@ -38,7 +38,7 @@ export class CreateUserController {
 
         };
         const header = users.shift();
-        console.log(users)
+        
         if (users.length > 0) {
             try {
                 for await (let { name, city, country, favorite_sport } of users) {
