@@ -24,6 +24,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Configurar Variáveis de Ambiente
+      run: |
+        echo "DATABASE_URL='mongodb+srv://ShawAndPartiners:q5lkdxwMeADPkp9t@cluster0.ho9b9os.mongodb.net/SHAWANDPARTNERS'" >> $GITHUB_ENV        
     - name: Install Dependencies
       run: npm install
     - name: Generate Prisma Code
